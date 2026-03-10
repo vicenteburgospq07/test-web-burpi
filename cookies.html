@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Política de Cookies — Burpi AI</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Geist:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<style>
+:root {
+  --bg:        #0B0E15;
+  --bg-alt:    #0F1118;
+  --surface:   #141720;
+  --border:    rgba(255,255,255,0.07);
+  --border-2:  rgba(255,255,255,0.12);
+  --blue:      #005CCD;
+  --blue-2:    #287FFF;
+  --blue-3:    #5BA3FF;
+  --blue-glow: rgba(0,92,205,0.35);
+  --violet:    #7C3AED;
+  --violet-2:  #9B6DFF;
+  --white:     #F4F5FA;
+  --grey:      #808DAA;
+  --grey-2:    #4B5470;
+  --font-head: 'Inter', sans-serif;
+  --font-body: 'Geist', 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --max-w:     1160px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--white);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  background-image:
+    radial-gradient(ellipse 1200px 700px at 50% -100px, rgba(0,92,205,0.12) 0%, transparent 70%);
+  background-attachment: fixed;
+}
+
+a { color: inherit; text-decoration: none; }
+::selection { background: var(--violet); color: #fff; }
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--violet); border-radius: 3px; }
+
+.container {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* ─── NAV ─── */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  height: 68px; display: flex; align-items: center;
+  border-bottom: 1px solid var(--border);
+  background: rgba(11,14,21,0.9);
+  backdrop-filter: blur(20px);
+}
+.nav-inner {
+  display: flex; align-items: center; justify-content: space-between;
+  width: 100%;
+}
+.nav-logo {
+  display: flex; align-items: center; gap: 10px;
+  font-weight: 700; font-size: 17px; letter-spacing: -0.02em;
+}
+.nav-logo-icon {
+  width: 52px; height: 52px;
+  display: flex; align-items: center; justify-content: center;
+  filter: drop-shadow(0 0 10px var(--blue-glow));
+}
+.nav-logo-icon img { width: 100%; height: 100%; object-fit: contain; }
+.nav-back {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 14px; font-weight: 500; color: var(--grey);
+  padding: 6px 14px;
+  border-radius: var(--radius-sm);
+  transition: color 0.2s;
+}
+.nav-back:hover { color: var(--white); }
+
+/* ─── CONTENT ─── */
+.privacy-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 120px 40px 100px;
+}
+
+.privacy-tag {
+  display: inline-block;
+  font-size: 12px; font-weight: 600; text-transform: uppercase;
+  letter-spacing: 0.12em; color: var(--violet-2);
+  margin-bottom: 16px;
+}
+
+.privacy-title {
+  font-family: var(--font-head);
+  font-size: clamp(36px, 5vw, 56px);
+  font-weight: 800; line-height: 1.1; letter-spacing: -0.04em;
+  color: var(--white); margin-bottom: 12px;
+}
+
+.privacy-date {
+  font-size: 13px; font-family: var(--font-mono);
+  color: var(--grey-2); margin-bottom: 48px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--border);
+}
+
+.privacy-intro {
+  font-size: 17px; color: var(--grey); line-height: 1.75;
+  margin-bottom: 56px;
+}
+
+.privacy-section {
+  margin-bottom: 48px;
+}
+
+.privacy-section h2 {
+  font-family: var(--font-head);
+  font-size: 20px; font-weight: 700; letter-spacing: -0.02em;
+  color: var(--white); margin-bottom: 16px;
+  display: flex; align-items: center; gap: 10px;
+}
+.privacy-section h2::before {
+  content: '';
+  display: inline-block; width: 3px; height: 20px;
+  background: linear-gradient(to bottom, var(--blue-2), var(--violet-2));
+  border-radius: 2px; flex-shrink: 0;
+}
+
+.privacy-section p {
+  font-size: 15px; color: var(--grey); line-height: 1.75;
+  margin-bottom: 12px;
+}
+
+.privacy-section ul {
+  list-style: none;
+  display: flex; flex-direction: column; gap: 8px;
+  margin: 12px 0 16px;
+}
+.privacy-section ul li {
+  display: flex; align-items: flex-start; gap: 10px;
+  font-size: 15px; color: var(--grey); line-height: 1.6;
+}
+.privacy-section ul li::before {
+  content: '→';
+  color: var(--blue-2); font-weight: 700; flex-shrink: 0;
+  margin-top: 1px;
+}
+.privacy-section ul li strong {
+  color: var(--white);
+}
+
+.privacy-section a {
+  color: var(--blue-2);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s;
+}
+.privacy-section a:hover { color: var(--blue-3); }
+
+.privacy-contact {
+  margin-top: 56px;
+  padding: 32px;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(40,127,255,0.2);
+  border-radius: var(--radius-lg);
+  position: relative; overflow: hidden;
+}
+.privacy-contact::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(40,127,255,0.4), transparent);
+}
+.privacy-contact h3 {
+  font-size: 16px; font-weight: 600; color: var(--white); margin-bottom: 8px;
+}
+.privacy-contact p { font-size: 15px; color: var(--grey); }
+.privacy-contact a { color: var(--blue-2); text-decoration: underline; text-underline-offset: 3px; }
+
+/* ─── FOOTER ─── */
+footer {
+  border-top: 1px solid var(--border);
+  padding: 40px 0 32px;
+  text-align: center;
+}
+.footer-bottom-links { display: flex; gap: 24px; justify-content: center; margin-top: 12px; }
+.footer-bottom-links a { font-size: 13px; color: var(--grey-2); transition: color 0.2s; }
+.footer-bottom-links a:hover { color: var(--violet-2); }
+footer p { font-size: 13px; color: var(--grey-2); }
+
+@media (max-width: 600px) {
+  .container { padding: 0 20px; }
+  .privacy-wrap { padding: 100px 20px 80px; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon"><img src="brand-assets/Burpi__3_-removebg-preview.png" alt="Burpi" /></div>
+        Burpi AI
+      </a>
+      <a href="index.html" class="nav-back">
+        ← Volver al inicio
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- CONTENT -->
+<main class="privacy-wrap">
+
+  <p class="privacy-tag">Legal</p>
+  <h1 class="privacy-title">Política de Cookies</h1>
+  <p class="privacy-date">Sitio web: www.iaburpi.com</p>
+
+  <p class="privacy-intro">
+    Esta Política de Cookies explica cómo Burpi AI ("nosotros", "nuestro" o "nos") utiliza cookies y tecnologías similares en nuestro sitio web <a href="https://www.iaburpi.com">www.iaburpi.com</a> ("el Sitio").
+  </p>
+
+  <div class="privacy-section">
+    <h2>1. ¿Qué son las cookies?</h2>
+    <p>Las cookies son pequeños archivos de texto que se almacenan en su dispositivo para guardar datos que pueden ser recuperados por un servidor web en el dominio que colocó la cookie. Se utilizan ampliamente para que los sitios web funcionen o funcionen de manera más eficiente, así como para proporcionar información a los propietarios del sitio.</p>
+  </div>
+
+  <div class="privacy-section">
+    <h2>2. Cómo usamos las cookies</h2>
+    <p>Utilizamos cookies para:</p>
+    <ul>
+      <li>Garantizar el correcto funcionamiento del sitio web.</li>
+      <li>Recordar sus preferencias y configuraciones.</li>
+      <li>Analizar cómo los visitantes usan nuestro sitio para mejorar el rendimiento.</li>
+      <li>Facilitar la comunicación a través de formularios y herramientas de contacto.</li>
+    </ul>
+  </div>
+
+  <div class="privacy-section">
+    <h2>3. Tipos de cookies que utilizamos</h2>
+    <ul>
+      <li><strong>Cookies estrictamente necesarias:</strong> Requeridas para el funcionamiento de nuestro sitio.</li>
+      <li><strong>Cookies de rendimiento:</strong> Nos ayudan a comprender cómo interactúan los visitantes con nuestro sitio web.</li>
+      <li><strong>Cookies de funcionalidad:</strong> Recuerdan las opciones que selecciona (por ejemplo, idioma).</li>
+      <li><strong>Cookies de marketing:</strong> Pueden usarse para rastrear a los visitantes en diferentes sitios web y mostrar anuncios relevantes (solo si corresponde).</li>
+    </ul>
+  </div>
+
+  <div class="privacy-section">
+    <h2>4. Cookies de terceros</h2>
+    <p>Podemos utilizar servicios de terceros como herramientas de análisis (por ejemplo, Google Analytics) que colocan sus propias cookies. Recomendamos revisar sus políticas de privacidad para más información.</p>
+  </div>
+
+  <div class="privacy-section">
+    <h2>5. Gestión de cookies</h2>
+    <p>Puede controlar y eliminar cookies a través de la configuración de su navegador. Sin embargo, desactivar las cookies puede afectar la funcionalidad de nuestro sitio.</p>
+  </div>
+
+  <div class="privacy-section">
+    <h2>6. Cambios en esta política</h2>
+    <p>Podemos actualizar esta Política de Cookies periódicamente. Cualquier cambio será publicado en esta página con la fecha actualizada.</p>
+  </div>
+
+  <div class="privacy-contact">
+    <h3>7. Contacto</h3>
+    <p>Si tiene alguna pregunta sobre nuestra Política de Cookies, puede contactarnos en:<br/>
+    📧 <a href="mailto:vicenteburgospiquer.ia@gmail.com">vicenteburgospiquer.ia@gmail.com</a></p>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <p>&copy; 2026 Burpi AI. Todos los derechos reservados.</p>
+    <div class="footer-bottom-links">
+      <a href="privacidad.html">Privacidad</a>
+      <a href="cookies.html">Cookies</a>
+      <a href="#">Términos</a>
+      <a href="aviso-legal.html">Aviso legal</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
