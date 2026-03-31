@@ -4,3 +4,11 @@ temporary screenshots/
 screenshot.mjs
 serve.mjs
 package-lock.json
+
+# Environment variables — nunca commitear secrets
+.env
+.env.local
+.env.*.local
+
+# macOS
+.DS_Store
